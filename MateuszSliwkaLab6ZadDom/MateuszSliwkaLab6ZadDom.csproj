@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'MateuszSliwkaLab6ZadDom' ">
+    <StartAction>Project</StartAction>
+    <ApplicationURL>https://localhost:5001;http://localhost:5000</ApplicationURL>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'MateuszSliwkaLab6' ">
+    <StartAction>Project</StartAction>
+    <ApplicationURL>http://localhost:5000</ApplicationURL>
+  </PropertyGroup>
+  <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Content\" />
+    <Folder Include="wwwroot\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\Home\_Layout.cshtml" />
+    <Content Remove="wwwroot\Images\civic.png" />
+    <Content Remove="wwwroot\Images\focus.png" />
+    <Content Remove="wwwroot\Images\golf.png" />
+    <Content Remove="wwwroot\Images\megane.png" />
+    <Content Remove="wwwroot\css\bootstrap.min.css" />
+    <Content Remove="wwwroot\css\bootstrap-reboot.min.css.map" />
+    <Content Remove="wwwroot\css\bootstrap.css" />
+    <Content Remove="wwwroot\css\bootstrap-grid.css.map" />
+    <Content Remove="wwwroot\css\bootstrap-grid.min.css" />
+    <Content Remove="wwwroot\css\bootstrap.css.map" />
+    <Content Remove="wwwroot\css\bootstrap.min.css.map" />
+    <Content Remove="wwwroot\css\bootstrap-reboot.min.css" />
+    <Content Remove="wwwroot\css\bootstrap-reboot.css" />
+    <Content Remove="wwwroot\css\bootstrap-grid.css" />
+    <Content Remove="wwwroot\css\bootstrap-grid.min.css.map" />
+    <Content Remove="wwwroot\css\bootstrap-reboot.css.map" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,144 @@
+﻿@model List<Extra>
+@{
+    ViewData["Title"] = "Wybór specyfikacji";
+}
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+</head>
+<body>
+    <main role="main">
+
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Wybrano: Mercedes-Benz @ViewBag.Model</h1>
+                <p class="lead text-muted">Teraz wybierz jego specyfikacje - silnik, skrzynie biegów oraz napęd.</p>
+
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    @using (Html.BeginForm("ShowExtras", "Home", FormMethod.Post))
+                    {
+                        @if (!string.Equals(ViewBag.Model, "Sprinter"))
+                        {
+                            <h4>Wybierz rodzaj silnika</h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="choosenEngine" id="s220d" value="S220d-0" checked>
+                                <label class="form-check-label" for="s220d">
+                                    S220d (2.0 diesel 210hp) <span class="badge badge-secondary badge-pill">STANDARD</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="choosenEngine" id="s350" value="S300-34000">
+                                <label class="form-check-label" for="s350">
+                                    S350 (3.0 benzyna 330hp) <span class="badge badge-secondary badge-pill">+34 000zł</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="choosenEngine" id="s500" value="S500-83000">
+                                <label class="form-check-label" for="s500">
+                                    S500 (4.0 benzyna 420hp) <span class="badge badge-secondary badge-pill">+83 000zł</span>
+                                </label>
+                            </div>
+
+
+                            <h4>Wybierz rodzaj skrzyni biegów </h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="choosenTransmission" id="mt" value="Manualna 6 biegowa-0" checked>
+                                <label class="form-check-label" for="mt">
+                                    Skrzynia manualna 6 biegowa <span class="badge badge-secondary badge-pill">STANDARD</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="choosenTransmission" id="at8" value="Automatyczna 8 biegowa-11000">
+                                <label class="form-check-label" for="at8">
+                                    Skrzynia automatyczna 8 biegowa <span class="badge badge-secondary badge-pill">+11 000zł</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="choosenTransmission" id="at10" value="Automatyczna 10 biegowa AMG-22000">
+                                <label class="form-check-label" for="at10">
+                                    Skrzynia automatyczna 10 biegowa AMG <span class="badge badge-secondary badge-pill">+22 000zł</span>
+                                </label>
+                            </div>
+                        }
+                        else
+                        {
+                            <h4>Wybierz rodzaj silnika</h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="choosenEngine" id="180d" value="180d-0" checked>
+                                <label class="form-check-label" for="180d">
+                                    180d (1.8 diesel 150km) <span class="badge badge-secondary badge-pill">STANDARD</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="choosenEngine" id="200d" value="200d-27000">
+                                <label class="form-check-label" for="200d">
+                                    200d (2.0 diesel 190km) <span class="badge badge-secondary badge-pill">+27 000zł</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="choosenEngine" id="250d" value="250d-34000">
+                                <label class="form-check-label" for="250d">
+                                    250d (2.0 diesel 233km) <span class="badge badge-secondary badge-pill">+34 000zł</span>
+                                </label>
+                            </div>
+
+
+                            <h4>Wybierz rodzaj skrzyni biegów </h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="choosenTransmission" id="mt" value="mt-0" checked>
+                                <label class="form-check-label" for="mt">
+                                    Skrzynia manualna 6 biegowa <span class="badge badge-secondary badge-pill">STANDARD</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="choosenTransmission" id="mt-pro" value="mtpro-16000">
+                                <label class="form-check-label" for="mtpro">
+                                    Skrzynia manualna wzmocniona <span class="badge badge-secondary badge-pill">+16 000zł</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="choosenTransmission" id="a6" value="at6-18000">
+                                <label class="form-check-label" for="at6">
+                                    Skrzynia automatyczna 6 biegowa <span class="badge badge-secondary badge-pill">+18 000zł</span>
+                                </label>
+                            </div>
+                        }
+                        <h4>Wybierz rodzaj napędu</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="choosenDrive" id="rear" value="Przedni-0" checked>
+                            <label class="form-check-label" for="rear">
+                                Napęd na tył <span class="badge badge-secondary badge-pill">STANDARD</span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="choosenDrive" id="4matic" value="4MATIC-42000">
+                            <label class="form-check-label" for="4matic">
+                                Napęd 4MATIC <span class="badge badge-secondary badge-pill">+42 000zł</span>
+                            </label>
+                        </div>
+
+
+                        <input type="submit" class="btn btn-success" value="Wybierz" />
+                    }
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        </div>
+        </div>
+        </div>
+
+    </main>
+
+
+</body>

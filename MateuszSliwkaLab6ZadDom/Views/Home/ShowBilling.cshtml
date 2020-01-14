@@ -1,0 +1,51 @@
+﻿@model string
+@{
+    ViewData["Title"] = "Finansowanie";
+}
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+</head>
+<body>
+    <main role="main">
+
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Witaj @Model!</h1>
+                <p class="lead text-muted">Jakiego rodzaju klientem jesteś?</p>
+
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row">
+
+                    @using (Html.BeginForm("ShowSummary", "Home", FormMethod.Get))
+                    {
+                        <label>Rodzaj klienta</label>
+                        <select class="form-control" name="klient" required>
+                            <option name="prywatny">Osoba prywatna</option>
+                            <option name="firma">Firma</option>
+                        </select>
+                        <br />
+                        <label>Metoda finansowania</label>
+                        <select class="form-control" name="finansowanie" required>
+                            <option name="gotowka">Gotówka</option>
+                            <option name="kredyt">Kredyt</option>
+                        </select>
+                        <input type="submit" class="btn btn-success" value="Przejdź dalej" />
+                    }
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+        </div>
+        </div>
+
+    </main>
+
+
+</body>

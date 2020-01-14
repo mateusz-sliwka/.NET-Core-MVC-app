@@ -1,0 +1,79 @@
+﻿@model Client
+@{
+    ViewData["Title"] = "Dane zamawiającaego";
+}
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+</head>
+<body>
+    <main role="main">
+
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Kupujesz Mercedes-Benz @CarOrder.Model.Model @TempData["currentCar"]</h1>
+                <p class="lead text-muted">Czas na podanie swoich danych osobowych.</p>
+
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    @using (Html.BeginForm("ShowBilling", "Home", FormMethod.Post))
+                    {
+                        <form>
+                            @Html.AntiForgeryToken()
+                            <!-- Imie -->
+                            <div class="form-group">
+                               <label>Imię</label>
+
+                                <div class="col-md-10">
+                                    @Html.EditorFor(model => model.Firstname, new { @class = "form-control" })
+
+                                </div>
+                            </div>
+                            <!-- Nazwisko -->
+                            <div class="form-group">
+                                <label>Nazwisko</label>
+                                <div class="col-md-10">
+                                    @Html.EditorFor(model => model.Lastname, new { @class = "form-control" })
+
+                                </div>
+                            </div>
+                            <!-- Opis -->
+                            <div class="form-group">
+                                <label>Adres e-mail</label>
+                                <div class="col-md-10">
+                                    @Html.EditorFor(model => model.Email, new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Telefon</label>
+                                <div class="col-md-10">
+                                    @Html.EditorFor(model => model.Phone, new { @class = "form-control" })
+                                </div>
+                            </div>
+
+                            <input type="submit" value="Wyślij" class="btn btn-success" />
+
+
+                        </form>
+                    }
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        </div>
+        </div>
+        </div>
+
+    </main>
+
+
+</body>

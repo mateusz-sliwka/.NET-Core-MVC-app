@@ -1,0 +1,55 @@
+﻿<Properties StartupConfiguration="{57C610BB-6EF2-4170-9D66-0304BD4D59DF}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/Extra.cs">
+    <Files>
+      <File FileName="Views/Home/ChooseExtras.cshtml" Line="45" Column="26" />
+      <File FileName="Views/Home/ChooseOwner.cshtml" Line="29" Column="63" />
+      <File FileName="Views/Home/ChooseSpecification.cshtml" Line="7" Column="3" />
+      <File FileName="Views/Home/FinalDecission.cshtml" Line="7" Column="2" />
+      <File FileName="Views/Home/ShowBilling.cshtml" Line="7" Column="2" />
+      <File FileName="Views/Home/ShowSummary.cshtml" Line="7" Column="6" />
+      <File FileName="Views/Home/Index.cshtml" Line="8" Column="5" />
+      <File FileName="Views/Shared/_Layout.cshtml" Line="7" Column="5" />
+      <File FileName="wwwroot/css/site.css" Line="12" Column="16" />
+      <File FileName="Models/Client.cs" Line="14" Column="19" />
+      <File FileName="Models/CarOrder.cs" Line="18" Column="34" />
+      <File FileName="Controllers/HomeController.cs" Line="52" Column="58" />
+      <File FileName="Models/CarTypeModel.cs" Line="1" Column="1" />
+      <File FileName="Models/ErrorViewModel.cs" Line="1" Column="1" />
+      <File FileName="Models/Extra.cs" Line="7" Column="27" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MateuszSliwkaLab6" expanded="True">
+            <Node name="MateuszSliwkaLab6" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Extra.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="Images" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>currentOrder</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MateuszSliwkaLab6 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

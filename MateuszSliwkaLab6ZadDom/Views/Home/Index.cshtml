@@ -1,0 +1,58 @@
+﻿@model List<CarTypeModel>
+@{
+    ViewData["Title"] = "Strona główna";
+}
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+
+</head>
+<body>
+    <main role="main">
+
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Konfigurator Mercedes</h1>
+                <p class="lead text-muted">Skonfiguruj swojego Mercedesa! Wybierz model podstawowy a następnie wszystkie dodatki jakie są Ci potrzebne, powodzenia :)</p>
+
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row">
+
+                    @foreach (var car in Model)
+                    {
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+
+                                <img class="card-img-top text-center" src="@Url.Content(car.Photo)" alt="@car.Model" height="200px" width="auto">
+                                <div class="card-body">
+                                    <h3>@car.Model</h3>
+
+
+                                    <p class="card-text">
+                                        <b>Ilosc miejsc:</b> @car.CarSeats <br />
+                                        <b>Cena bazowa:</b> @car.Price zł
+
+                                    </p>
+                                    <button class="btn btn-primary">@Html.ActionLink("Konfiguruj dalej", "ChooseSpecification", "Home", new { model = car.Model }, null)</button>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+</body>

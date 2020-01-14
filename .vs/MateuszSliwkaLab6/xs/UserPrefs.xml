@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{F272C444-429E-436E-A12F-A1D5B5CBD097}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MateuszSliwkaLab6/Controllers/HomeController.cs">
+    <Files>
+      <File FileName="MateuszSliwkaLab6/Program.cs" Line="16" Column="1" IsPinned="True" />
+      <File FileName="MateuszSliwkaLab6/Controllers/HomeController.cs" Line="24" Column="50" />
+      <File FileName="MateuszSliwkaLab6/Views/Home/GetListOfModels.cshtml" Line="1" Column="1" />
+      <File FileName="MateuszSliwkaLab6/Views/Home/GetCarByModel.cshtml" Line="5" Column="18" />
+      <File FileName="MateuszSliwkaLab6/Models/ContactFormViewModel.cs" Line="15" Column="1" />
+      <File FileName="MateuszSliwkaLab6/Views/Home/ContactForm.cshtml" Line="3" Column="37" />
+      <File FileName="MateuszSliwkaLab6/Views/Home/Index.cshtml" Line="11" Column="28" />
+      <File FileName="MateuszSliwkaLab6/Views/Home/ContactFormGreetings.cshtml" Line="4" Column="25" />
+      <File FileName="MateuszSliwkaLab6/Views/Home/GetAllCars.cshtml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MateuszSliwkaLab6" expanded="True">
+            <Node name="MateuszSliwkaLab6" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="js" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MateuszSliwkaLab6 PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

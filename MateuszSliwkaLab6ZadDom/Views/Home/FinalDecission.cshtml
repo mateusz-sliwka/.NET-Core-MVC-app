@@ -1,0 +1,35 @@
+﻿@model string
+@{
+    ViewData["Title"] = "Zamówienie";
+}
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    </style>
+</head>
+<body>
+    <main role="main">
+
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Zamówienie @Model</h1>
+                @if (Model == "potwierdzone")
+                {
+                    <p class="lead text-muted">Dziękujemy, cieszymy się z naszej współpracy :)<br />Niedługo nasz konsultant do Państwa zadzwoni!</p>
+                }
+                else
+                {
+                    <p class="lead text-muted">Bardzo nam przykro :( <br />Zapraszamy ponownie</p>
+                }
+            </div>
+            <div class="text-center">
+                <button class="btn btn-primary">@Html.ActionLink("Konfiguruj ponownie", "Index", "Home", null, null)</button>
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+</body>

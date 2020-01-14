@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{57C610BB-6EF2-4170-9D66-0304BD4D59DF}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Home/ChooseOwner.cshtml">
+    <Files>
+      <File FileName="Views/Home/ChooseExtras.cshtml" Line="69" Column="1" />
+      <File FileName="Views/Home/ChooseOwner.cshtml" Line="29" Column="63" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MateuszSliwkaLab6ZadDom" expanded="True">
+            <Node name="MateuszSliwkaLab6ZadDom" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="ChooseOwner.cshtml" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>currentOrder</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MateuszSliwkaLab6ZadDom PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

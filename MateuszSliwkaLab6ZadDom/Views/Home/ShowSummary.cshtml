@@ -1,0 +1,115 @@
+﻿@model string
+@{
+    ViewData["Title"] = "Potwierdzenie zamówienia";
+}
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+</head>
+<body>
+    <main role="main">
+
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Dziękujemy za zamówienie!</h1>
+                <p class="lead text-muted">Oto jego podsumowanie</p>
+
+            </div>
+        </section>
+
+        <div class="d-flex align-items-center p-3 my-3 text-white-50 rounded box-shadow" style="background:grey">
+            <img class="mr-3" src="@Url.Content(CarOrder.Model.Photo)" alt="" width="100" height="100">
+            <div class="lh-100">
+                <h6 class="mb-0 text-white lh-100">
+                    @CarOrder.Model.Model (@CarOrder.Model.CarSeats os)
+                </h6>
+                <p> @CarOrder.Model.Description</p>
+                <small>Cena bazowa @CarOrder.Model.Price</small>
+            </div>
+        </div>
+
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+            <h6 class="border-bottom border-gray pb-2 mb-0">Wybrana konfiguracja</h6>
+            <div class="media text-muted pt-3">
+                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block text-gray-dark">@CarOrder.Engine.Name <span class="badge badge-secondary badge-pill">@CarOrder.Engine.Price zł</span></strong>
+                    Wybrana konfiguracja silnika
+                </p>
+            </div>
+            <div class="media text-muted pt-3">
+                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block text-gray-dark">@CarOrder.Transmission.Name <span class="badge badge-secondary badge-pill">@CarOrder.Transmission.Price zł</span></strong>
+                    Rodzaj skrzyni biegów
+                </p>
+            </div>
+            <div class="media text-muted pt-3">
+                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block text-gray-dark">@CarOrder.Drive.Name <span class="badge badge-secondary badge-pill">@CarOrder.Drive.Price zł</span></strong>
+                    Typ napędu
+                </p>
+            </div>
+
+        </div>
+
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+            <h6 class="border-bottom border-gray pb-2 mb-0">Wyposażenie dodatkowe</h6>
+            @foreach (var extra in CarOrder.Extras)
+            {
+
+                <div class="media text-muted pt-3">
+                    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                        <strong class="d-block text-gray-dark">@extra.Name <span class="badge badge-secondary badge-pill">@extra.Price zł</span></strong>
+                    </p>
+                </div>
+            }
+
+        </div>
+        <h3>Cena konfiguracji: @CarOrder.Price zł</h3>
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+            <h6 class="border-bottom border-gray pb-2 mb-0">Dane klienta</h6>
+
+
+            <div class="media text-muted pt-3">
+                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block text-gray-dark">@CarOrder.Owner.Firstname @CarOrder.Owner.Lastname</strong>
+                    Imię i nazwisko
+                </p>
+            </div>
+            <div class="media text-muted pt-3">
+                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block text-gray-dark">@CarOrder.Owner.Email</strong>
+                    Adres e-mail
+                </p>
+            </div>
+            <div class="media text-muted pt-3">
+                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block text-gray-dark">@CarOrder.Owner.Phone</strong>
+                    Numer telefonu
+                </p>
+            </div>
+
+            <div class="media text-muted pt-3">
+                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block text-gray-dark">@TempData["clientType"]</strong>
+                    Typ klienta
+                </p>
+            </div>
+            <div class="media text-muted pt-3">
+                <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block text-gray-dark">@TempData["payment"]</strong>
+                    Finansowanie
+                </p>
+            </div>
+
+        </div>
+        <div class="text-center">
+            @using (Html.BeginForm("FinalDecission", "Home", FormMethod.Get))
+            {
+                <button id="singlebutton" name="decission" class="btn btn-success" type="submit" value="potwierdzone">Potwierdzam</button>
+                <button id="singlebutton" name="decission" class="btn btn-secondary" type="submit" value="anulowane">Anuluje</button>
+            }
+        </div>
+    </main>
+
+
+</body>

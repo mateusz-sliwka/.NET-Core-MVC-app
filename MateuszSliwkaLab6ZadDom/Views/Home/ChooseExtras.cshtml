@@ -1,0 +1,85 @@
+﻿@model List<Extra>
+@{
+    ViewData["Title"] = "Dodatkowe wyposażenie";
+}
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+</head>
+<body>
+    <main role="main">
+
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Wybrano: Mercedes-Benz @ViewBag.Model @CarOrder.Engine.Name</h1>
+                <p class="lead text-muted">Teraz wybierz jego specyfikacje - silnik, skrzynie biegów oraz napęd.</p>
+
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row">
+
+                    @using (Html.BeginForm("ShowOwner", "Home", FormMethod.Post))
+                    {
+                        @if (!string.Equals(ViewBag.Model, "Sprinter"))
+                        {
+                            <h4>Wybierz dodatkowe wyposazenie</h4>
+
+                            <div class="form-group">
+                                <label for="extras">Mozna wybrac kilka pozycji</label>
+                                <select multiple class="form-control" id="extras" name="extras" size="11">
+                                    <option value="Felgi aluminiowe 22'-10000">Felgi aluminiowe 22' (10 000zł)</option>
+                                    <option value="Abonament myMercedes 12msc-1340">Abonament myMercedes 12msc (1 340zł)</option>
+                                    <option value="Hak holowniczy-3400">Hak holowniczy (3 400zł)</option>
+                                    <option value="System Apple CarPlay-1200">System Apple CarPlay (1 200zł)</option>
+                                    <option value="Dociaganie drzwi-500">Dociąganie drzwi (500zł)</option>
+                                    <option value="Podgrzewana tylna kanapa-3000">Podgrzewana tylna kanapa (3 000zł)</option>
+                                    <option value="Telefon satelitarny-5500">Telefon satelitarny (5 500zł)</option>
+                                    <option value="Gniazdo 220V-1300">Gniazdo 220V (1 300zł)</option>
+                                    <option value="Swiatla Svarovsky-12000">Światła Svarovsky (12 000zł)</option>
+                                    <option value="Instalacja LPG-10000">Instalacja LPG (10 000zł)</option>
+                                </select>
+                            </div>
+                        }
+                        else
+                        {
+                            <h4>Wybierz rodzaj silnika</h4>
+                            <div class="form-group">
+                                <label for="extras">Mozna wybrac kilka pozycji</label>
+                                <select multiple class="form-control" id="extras" name="extras" size="9">
+                                    <option value="Felgi aluminiowe 22'-10000">Felgi aluminiowe 22' (10 000zł)</option>
+                                    <option value="Abonament myMercedes 24msc-2340">Abonament myMercedes 24msc (2 340zł)</option>
+                                    <option value="Wzmocniony hak-3400">Wzmocniony hak (3 400zł)</option>
+                                    <option value="Zabudowa paki-21200">Zabudowa paki (21 200zł)</option>
+                                    <option value="Obnizona paka-15000">Obniżana paka (15 000zł)</option>
+                                    <option value="Wytłumienie paki-3000">Wytłumienie paki (3 000zł)</option>
+                                    <option value="Sejf w schowku-5500">Sejf w schowku (5 500zł)</option>
+
+                                </select>
+                            </div>
+                        }
+
+
+                        <input type="submit" class="btn btn-success" value="Wybierz" />
+
+                    }
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        </div>
+        </div>
+        </div>
+
+    </main>
+
+
+</body>
