@@ -1,4 +1,4 @@
-﻿@model Client
+﻿@model Client       
 @{
     ViewData["Title"] = "Dane zamawiającaego";
 }
@@ -8,7 +8,7 @@
 </head>
 <body>
     <main role="main">
-
+        <!-- sekcja gorna wyswietlajaca tytul danej sekcji !-->
         <section class="jumbotron text-center">
             <div class="container">
                 <h1 class="jumbotron-heading">Kupujesz Mercedes-Benz @CarOrder.Model.Model @TempData["currentCar"]</h1>
@@ -20,45 +20,47 @@
         <div class="album py-5 bg-light">
             <div class="container">
                 <div class="row">
+                    <!-- formularz tworzenia nowego clienta !-->
                     @using (Html.BeginForm("ShowBilling", "Home", FormMethod.Post))
                     {
-                        <form>
-                            @Html.AntiForgeryToken()
-                            <!-- Imie -->
-                            <div class="form-group">
-                               <label>Imię</label>
+                    <form>
+                        @Html.AntiForgeryToken()
+                        <!-- Imie -->
+                        <div class="form-group">
+                            <label>Imię</label>
 
-                                <div class="col-md-10">
-                                    @Html.EditorFor(model => model.Firstname, new { @class = "form-control" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Firstname, new { @class = "form-control" })
 
-                                </div>
                             </div>
-                            <!-- Nazwisko -->
-                            <div class="form-group">
-                                <label>Nazwisko</label>
-                                <div class="col-md-10">
-                                    @Html.EditorFor(model => model.Lastname, new { @class = "form-control" })
+                        </div>
+                        <!-- Nazwisko -->
+                        <div class="form-group">
+                            <label>Nazwisko</label>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Lastname, new { @class = "form-control" })
 
-                                </div>
                             </div>
-                            <!-- Opis -->
-                            <div class="form-group">
-                                <label>Adres e-mail</label>
-                                <div class="col-md-10">
-                                    @Html.EditorFor(model => model.Email, new { @class = "form-control" })
-                                </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label>Adres e-mail</label>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Email, new { @class = "form-control" })
                             </div>
-                            <div class="form-group">
-                                <label>Telefon</label>
-                                <div class="col-md-10">
-                                    @Html.EditorFor(model => model.Phone, new { @class = "form-control" })
-                                </div>
+                        </div>
+                        <!-- Telefon -->
+                        <div class="form-group">
+                            <label>Telefon</label>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Phone, new { @class = "form-control" })
                             </div>
+                        </div>
+                        <!-- przycisk zatiwerdzenia !-->
+                        <input type="submit" value="Wyślij" class="btn btn-success" />
 
-                            <input type="submit" value="Wyślij" class="btn btn-success" />
 
-
-                        </form>
+                    </form>
                     }
 
                 </div>

@@ -1,4 +1,4 @@
-﻿@model List<Extra>
+﻿
 @{
     ViewData["Title"] = "Dodatkowe wyposażenie";
 }
@@ -8,7 +8,7 @@
 </head>
 <body>
     <main role="main">
-
+        <!-- sekcja gorna wyswietlajaca tytul danej sekcji !-->
         <section class="jumbotron text-center">
             <div class="container">
                 <h1 class="jumbotron-heading">Wybrano: Mercedes-Benz @ViewBag.Model @CarOrder.Engine.Name</h1>
@@ -20,7 +20,7 @@
         <div class="album py-5 bg-light">
             <div class="container">
                 <div class="row">
-
+                    <!-- formularz ktory sklada sie z selecta wyposazenia i przekazuje go metoda post !-->
                     @using (Html.BeginForm("ShowOwner", "Home", FormMethod.Post))
                     {
                         @if (!string.Equals(ViewBag.Model, "Sprinter"))
@@ -61,7 +61,7 @@
                             </div>
                         }
 
-
+                        <!-- przycisk zatwierdzajacy !-->
                         <input type="submit" class="btn btn-success" value="Wybierz" />
 
                     }

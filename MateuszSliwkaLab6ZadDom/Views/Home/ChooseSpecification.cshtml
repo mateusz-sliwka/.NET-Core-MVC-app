@@ -1,4 +1,4 @@
-﻿@model List<Extra>
+﻿
 @{
     ViewData["Title"] = "Wybór specyfikacji";
 }
@@ -8,6 +8,7 @@
 </head>
 <body>
     <main role="main">
+        <!--gorna sekcja z tytulem -->
 
         <section class="jumbotron text-center">
             <div class="container">
@@ -20,6 +21,8 @@
         <div class="album py-5 bg-light">
             <div class="container">
                 <div class="row">
+                    <!-- formularz wyboru specyfikacji przekazywany metoda post, formularz zalezny od wczesniej wybranego modelu-->
+
                     @using (Html.BeginForm("ShowExtras", "Home", FormMethod.Post))
                     {
                         @if (!string.Equals(ViewBag.Model, "Sprinter"))
@@ -121,6 +124,7 @@
                                 Napęd 4MATIC <span class="badge badge-secondary badge-pill">+42 000zł</span>
                             </label>
                         </div>
+
 
 
                         <input type="submit" class="btn btn-success" value="Wybierz" />

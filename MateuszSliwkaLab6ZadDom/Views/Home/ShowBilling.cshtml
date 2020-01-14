@@ -8,7 +8,7 @@
 </head>
 <body>
     <main role="main">
-
+        <!--gorna sekcja z tytulem -->
         <section class="jumbotron text-center">
             <div class="container">
                 <h1 class="jumbotron-heading">Witaj @Model!</h1>
@@ -20,7 +20,7 @@
         <div class="album py-5 bg-light">
             <div class="container">
                 <div class="row">
-
+                    <!--formularz z dwoma selectami z wyborem klienta i fiannsowania, przekazywane getem -->
                     @using (Html.BeginForm("ShowSummary", "Home", FormMethod.Get))
                     {
                         <label>Rodzaj klienta</label>

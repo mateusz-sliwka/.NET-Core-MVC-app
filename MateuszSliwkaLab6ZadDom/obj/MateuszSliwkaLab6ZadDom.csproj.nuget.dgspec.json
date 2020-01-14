@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mateuszsliwka/Desktop/MateuszSliwkaLab6ZadDom/MateuszSliwkaLab6ZadDom/MateuszSliwkaLab6ZadDom.csproj": {}
+    "C:\\Users\\Mateusz\\Desktop\\Kredek\\mateusz_sliwka\\MateuszSliwkaLab6ZadDom\\MateuszSliwkaLab6ZadDom\\MateuszSliwkaLab6ZadDom.csproj": {}
   },
   "projects": {
-    "/Users/mateuszsliwka/Desktop/MateuszSliwkaLab6ZadDom/MateuszSliwkaLab6ZadDom/MateuszSliwkaLab6ZadDom.csproj": {
+    "C:\\Users\\Mateusz\\Desktop\\Kredek\\mateusz_sliwka\\MateuszSliwkaLab6ZadDom\\MateuszSliwkaLab6ZadDom\\MateuszSliwkaLab6ZadDom.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mateuszsliwka/Desktop/MateuszSliwkaLab6ZadDom/MateuszSliwkaLab6ZadDom/MateuszSliwkaLab6ZadDom.csproj",
+        "projectUniqueName": "C:\\Users\\Mateusz\\Desktop\\Kredek\\mateusz_sliwka\\MateuszSliwkaLab6ZadDom\\MateuszSliwkaLab6ZadDom\\MateuszSliwkaLab6ZadDom.csproj",
         "projectName": "MateuszSliwkaLab6ZadDom",
-        "projectPath": "/Users/mateuszsliwka/Desktop/MateuszSliwkaLab6ZadDom/MateuszSliwkaLab6ZadDom/MateuszSliwkaLab6ZadDom.csproj",
-        "packagesPath": "/Users/mateuszsliwka/.nuget/packages/",
-        "outputPath": "/Users/mateuszsliwka/Desktop/MateuszSliwkaLab6ZadDom/MateuszSliwkaLab6ZadDom/obj/",
+        "projectPath": "C:\\Users\\Mateusz\\Desktop\\Kredek\\mateusz_sliwka\\MateuszSliwkaLab6ZadDom\\MateuszSliwkaLab6ZadDom\\MateuszSliwkaLab6ZadDom.csproj",
+        "packagesPath": "C:\\Users\\Mateusz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mateusz\\Desktop\\Kredek\\mateusz_sliwka\\MateuszSliwkaLab6ZadDom\\MateuszSliwkaLab6ZadDom\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/mateuszsliwka/.config/NuGet/NuGet.Config"
+          "C:\\Users\\Mateusz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

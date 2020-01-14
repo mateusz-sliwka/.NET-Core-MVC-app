@@ -1,4 +1,4 @@
-﻿@model string
+﻿
 @{
     ViewData["Title"] = "Potwierdzenie zamówienia";
 }
@@ -8,7 +8,7 @@
 </head>
 <body>
     <main role="main">
-
+        <!--gorna sekcja z tytulem -->
         <section class="jumbotron text-center">
             <div class="container">
                 <h1 class="jumbotron-heading">Dziękujemy za zamówienie!</h1>
@@ -16,7 +16,7 @@
 
             </div>
         </section>
-
+        <!--sekcja wyswietalajaca podsumowanie zamowienia, dane pobiera ze statycznej klasy CarOrder, tempdata -->
         <div class="d-flex align-items-center p-3 my-3 text-white-50 rounded box-shadow" style="background:grey">
             <img class="mr-3" src="@Url.Content(CarOrder.Model.Photo)" alt="" width="100" height="100">
             <div class="lh-100">
@@ -103,6 +103,7 @@
 
         </div>
         <div class="text-center">
+            <!--formularz ptowierdzenia lub anulowania zamowienia przekazywany do FinalDecission w HomeCOntrollerze getem -->
             @using (Html.BeginForm("FinalDecission", "Home", FormMethod.Get))
             {
                 <button id="singlebutton" name="decission" class="btn btn-success" type="submit" value="potwierdzone">Potwierdzam</button>

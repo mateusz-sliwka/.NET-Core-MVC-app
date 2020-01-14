@@ -1,0 +1,1 @@
+Konfigurator samochody. Aplikacja webowa pozwalajaca na skonfigurowanie zamowienia nowego samochodu. W programie uzyte zostalo wiele metod komunikacji miedzy widokami w celach edukacyjnych. Dzialanie aplikacji opiera sie przede wszystkim na formularzach i przekazuwaniu metodami get oraz post. Calosc stworzona przy uzyciu .NET Core z dodatkiem Bootstrapa.
